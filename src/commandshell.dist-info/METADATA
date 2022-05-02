@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.6
+Name: commandshell
+Formal-Name: Command Shell
+App-ID: io.github.tyler887.commandshell
+Version: 0.0.1
+Home-page: https://tyler887.github.io/commandshell
+Author: Tyler Magee Shields
+Author-email: tyler@tyler887.github.io
+Summary: A cli shell

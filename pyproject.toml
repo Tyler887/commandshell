@@ -1,0 +1,52 @@
+[tool.briefcase]
+project_name = "Command Shell"
+bundle = "io.github.tyler887"
+version = "0.0.1"
+url = "https://tyler887.github.io/commandshell"
+license = "MIT license"
+author = 'Tyler Magee Shields'
+author_email = "tylermageeshields@gmail.com"
+
+[tool.briefcase.app.commandshell]
+formal_name = "Command Shell"
+description = "A simple portable command-line"
+icon = "src/commandshell/resources/commandshell"
+sources = ['src/commandshell']
+requires = [
+]
+
+
+[tool.briefcase.app.commandshell.macOS]
+requires = [
+    'toga-cocoa>=0.3.0.dev32',
+    'std-nslog==1.0.0'
+]
+
+[tool.briefcase.app.commandshell.linux]
+requires = [
+    'toga-gtk>=0.3.0.dev32',
+]
+system_requires = [
+    'libgirepository1.0-dev',
+    'libcairo2-dev',
+    'libpango1.0-dev',
+    'libwebkitgtk-3.0-0',
+    'gir1.2-webkit-3.0',
+]
+
+[tool.briefcase.app.commandshell.windows]
+requires = [
+    'toga-winforms>=0.3.0.dev32',
+]
+
+# Mobile deployments
+[tool.briefcase.app.commandshell.iOS]
+requires = [
+    'toga-iOS>=0.3.0.dev32',
+    'std-nslog==1.0.0'
+]
+
+[tool.briefcase.app.commandshell.android]
+requires = [
+    'toga-android>=0.3.0.dev32'
+]
